@@ -1,13 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { ThemeProvider } from 'styled-components';
+
 import { App } from 'components/App';
+import { theme } from 'Theme';
+
 import './index.css';
-import { Widget } from 'components/FeedbackWidget';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App>
-      <Widget></Widget>
-    </App>
+    <ThemeProvider theme={theme}>
+      <App />
+    </ThemeProvider>
   </React.StrictMode>
 );
