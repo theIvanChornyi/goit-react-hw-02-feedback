@@ -7,6 +7,7 @@ export const FeedbackBtn = styled.button`
   padding: ${p => p.theme.space[1]}px;
 
   color: ${p => p.theme.colors.btnText};
+  text-transform: capitalize;
 
   border: none;
   border-radius: ${p => p.theme.radii.small}px;
